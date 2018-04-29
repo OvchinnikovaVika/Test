@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--описание страницы <meta type=»description» content=»Краткое описание страницы»>-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="in.css">
+   <script src="script.js"></script>
+    <title>Сайт ЕГЭ</title> 
+    <style id="filter">
+		</style>
+</head>
+<body>
+   <div id="mainbox"> <!-- корневой div-элемент-->
+        <header>
+                <div id="header-shadow">
+                        <div class="wrapper">
+                            <div id="header-left">
+                            <h1><strong>Все предметы</strong></h1>
+                            <h2>На одной странице вы найдете ссылки самых классных сайтов для подготовки к ЕГЭ</h2>
+                        <p>Все блоги, видеоуроки, полезная информация. Это можно найти у нас, при регистрации вы получаете рассылку с самыми лучшиими подборками, заточенными на получение интеллектуальной подпитки. Лайфхак, с любовью к учебе!</p>
+                        <a href="#download" class="button-download">Узнать подробнее</a>
+                        <a href="#change" class="button28">Регистрация</a>
+                        <form method="post" action="#">
+                        <input type="text" name="name" id="header_form_name" placeholder="Имя">
+                        <input type="text" name="email" id="header_form_email" placeholder="Email *">
+                        <input type="submit" name="submit" value="Поехали!" class="btn-primary"> </form>
+                    </div>
+                    <a href="#" class="button5" data-twitter>twitter</a>
+                    <a href="#" class="button5" data-facebook>facebook</a>
+                    <a href="#" class="button5" data-vk>vk</a>
+                    <div id="header-right">
+                        <img src="images/phone1.png" alt="">
+                        
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+        </header>
+    </div><!-- /mainbox -->  
+    <nav role='navigation'>
+        <ul>
+          <li><a href="#">Новости</a>
+            <ul>
+              <li><a href="">Наша команда</a></li>
+              <li><a href="">Ссылки</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Общая информация о ЕГЭ</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>              
+    </nav> 
+    
+    <div class="block-menu">  
+        <label>Предмет:</label>
+        <div class="container-home"> 
+            <table class="search">
+			    <tr>
+				    <th>Предмет:</th>
+				    <td>
+                            <select id="style" onchange="filter_changed()">
+                                <option value="">Все:</option>
+                                <option value="Математика" id="math">Математика</option>
+                                <option value="Физика" id="fith">Физика</option>
+                                <option value="Русский язык" id="rus">Русский язык</option>
+                                <option value="История" id="his">История</option>
+                                <option value="Информатика" id="info">Информатика</option>
+                                <option value="Обществознание" id="obsh">Обществознание</option>
+                                <option value="География" id="geog">География</option>
+                                <option value="Английский язык" id="eng">Английский язык</option>
+                                <option value="Биология" id="biol">Биология</option>
+                                <option value="Химия" id="him">Химия</option>
+                                <option value="Литература" id="lit">Литература</option>
+                            </select>
+                    </td>
+                </tr>
+		    </table>
+<!--Структура по предметам-->
+            <div class="home whiteframe">
+                    <a class="url" href="subjectsEGE.math.ru/#subj">
+                        <img class="image" src="images/fon.jpg"/>
+                    </a>
+                    <div class="name">ЕГЭ по математике </div>
+                    <div class="style">Математика</div>
+                    <div class="wall_material"> 5
+                        1. https://examer.ru/ege_po_matematike/2018/ 
+                        2. https://math-ege.sdamgia.ru
+                        3. https://examer.ru/ege_po_matematike/2018/
+                        4. http://alexlarin.net
+                        5. https://academyege.ru
+                     </div>
+                    <div class="square">165</div>
+                    <div class="living_space">86</div>
+                    <div class="floors">90</div>
+            </div>
+            <div class="home whiteframe neoklas kirpich fl2">
+                <a class="url" href="http://kirpich.archimeta.ru/#rust">
+                        <img class="image" src="https://www.acikgazete.com/wp-content/uploads/2016/07/mayPduSLFdu.jpg" alt=""/>
+                </a>
+                <div class="name">ЕГЭ по физике</div>
+                <div class="style">Физика</div>
+                <div class="wall_material">45555</div>
+                <div class="square">165</div>
+                <div class="living_space">86</div>
+                <div class="floors">2</div>
+            </div>
+            
+            <div class="home whiteframe postmodern gazobeton fl2">
+                <a class="url" href="http://kirpich.archimeta.ru/#shater">
+                        <img class="image" src="http://www.vrata11.ru/images/novaya_metodika/misterii_zhizni/Rysski/img_06062016_185759.png"  alt=""/>
+                </a>
+                <div class="name">ЕГЭ по русскому языку</div>
+                <div class="style">Русский язык</div>
+                <div class="wall_material">25</div>
+                <div class="square">262</div>
+                <div class="living_space">148</div>
+                <div class="floors">2</div>
+            </div>
+
+            <div class="home whiteframe psevdomodern karkas fl1">
+                <a class="url" href="http://karkas.archimeta.ru/#papirus">
+                        <img class="image" src="http://saratov-segodnya.ru/files/pages/18723/1450346613general_pages_min.jpeg"  alt="" title="«Папирус»"/>
+                </a>
+                <div class="name">ЕГЭ по истории</div>
+                    <!-- <a class="url" href="http://karkas.archimeta.ru/#papirus">
+                        «Папирус»
+                    </a> -->
+
+                <div class="style">История</div>
+                <div class="wall_material">455</div>
+                <div class="square">142</div>
+                <div class="living_space">77</div>
+                <div class="floors">1</div>
+            </div>
+            
+            <div class="home whiteframe neogot derevo fl3">
+                <a class="url" href="http://derevo.archimeta.ru/#legenda">
+                        <img class="image" src="http://img2.1001golos.ru/ratings/532000/531116/pic2.jpg"  alt="" title="«Легенда»"/>
+                </a>
+                <div class="name">ЕГЭ по информатике</div>
+                <div class="style">Информатика</div>
+                <div class="wall_material">678</div>
+                <div class="square">789</div>
+                <div class="living_space">13445</div>
+                <div class="floors">5789</div>
+            </div>
+            
+            <div class="home whiteframe burin kirpich fl4">
+                    <a class="url" href="http://derevo.archimeta.ru/#legenda">
+                        <img class="image" src="http://news.liga.net/upload/resize_cache/iblock/ba8/380_230_2/ba8f38faf42a268903976825f6f74cd7.jpg"  alt="" title="«Легенда»"/>
+                </a>
+                <div class="name">ЕГЭ по обществознанию</div>
+                <div class="style">Обществознание</div>
+                <div class="wall_material">1112</div>
+                <div class="square">456</div>
+                <div class="living_space">2456</div>
+                <div class="floors">890</div>
+            </div>
+            <div class="home whiteframe gignulas gtrree fl5">
+                    <a class="url" href="http://derevo.archimeta.ru/#legenda">
+                        <img class="image" src="http://oqu-zaman.kz/wp-content/uploads/2016/03/mzl.oojjmgec-300x247.png"  alt="" title="«Легенда»"/>
+                </a>
+                <div class="name">ЕГЭ по английскому языку</div>
+                <div class="style">Английский язык</div>
+                <div class="wall_material">122</div>
+                <div class="square">67</div>
+                <div class="living_space">789</div>
+                <div class="floors">90</div>
+            </div>
+            <div class="home whiteframe htfmek gktjirjgvkd fl6">
+                    <a class="url" href="http://derevo.archimeta.ru/#legenda">
+                        <img class="image" src="https://intanindramayu.files.wordpress.com/2010/10/biology.jpg"  alt="" title="«Легенда»"/>
+                </a>
+                <div class="name">ЕГЭ по биологии</div>
+                <div class="style">Биология</div>
+                <div class="wall_material">123</div>
+                <div class="square">57</div>
+                <div class="living_space">3</div>
+                <div class="floors">78</div>
+            </div>
+            <div class="home whiteframe wwwjjwjw uoiooi fl7">
+                    <a class="url" href="http://derevo.archimeta.ru/#legenda">
+                        <img class="image" src="http://oqu-zaman.kz/wp-content/uploads/2016/05/23700-300x247.jpg"  alt="" title="«Легенда»"/>
+                </a>
+                <div class="name">ЕГЭ по географии</div>
+                <div class="style">География</div>
+                <div class="wall_material">89</div>
+                <div class="square">56</div>
+                <div class="living_space">344</div>
+                <div class="floors">58</div>
+            </div>
+            <div class="home whiteframe ppeeeeo lljljjl fl8">
+                    <a class="url" href="http://derevo.archimeta.ru/#legenda">
+                        <img class="image" src="https://www.arkema-analytical-solutions.com/export/sites/analyticalsolutions/.content/medias/images/analytical-solutions-chem-profiling-deformulation.jpg_43353803.jpg"  alt="" title="«Легенда»"/>
+                </a>
+                <div class="name">ЕГЭ по химии</div>
+                <div class="style">Химия</div>
+                <div class="wall_material">68</div>
+                <div class="square">76</div>
+                <div class="living_space">900</div>
+                <div class="floors">78</div>
+            </div>
+            <div class="home whiteframe qqbbsbsbs cjjssu fl9">
+                    <a class="url" href="http://derevo.archimeta.ru/#legenda">
+                        <img class="image" src="https://images.ua.prom.st/456118745_w640_h640_knigi_po_psihologii_2.jpg"  alt="" title="«Легенда»"/>
+                </a>
+                <div class="name">ЕГЭ по литературе</div>
+                <div class="style">Литература</div>
+                <div class="wall_material">12</div>
+                <div class="square">40</div>
+                <div class="living_space">70</div>
+                <div class="floors">56</div>
+            </div>
+		<!--
+		<div class="home whiteframe">
+			<a class="url" href="">
+				<img class="image" src="" alt="" title=""/>
+			</a>
+			<div class="name">
+				<a class="url" href="">
+					
+				</a>
+			</div>
+			<div class="style"></div>
+			<div class="wall_material"></div>
+			<div class="living_space"></div>
+			<div class="square"></div>
+			<div class="floors"></div>
+		</div>
+		-->
+        </div>
+        <div class="footer"> </div>
+    </div>
+</body>
+</html>
